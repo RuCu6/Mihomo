@@ -1,0 +1,97 @@
+# Nikki (mihomo) rule-providers 片段
+# 用法: 把本文件 rule-providers 段合并进 Nikki 的 mihomo 配置,
+#       *.list 文件放到配置同目录的 rules/ 文件夹下 (path 按实际位置改),
+#       再把 rules 段按顺序加到你现有 rules 的前面。
+# PROXY 是占位名: 换成你 Nikki 里实际的出口策略组名 (对应 Loon 的 Bypass)。
+
+rule-providers:
+  PornAds:
+    type: file
+    path: ./rules/PornAds.list
+    behavior: classical
+    format: text
+  Global:
+    type: file
+    path: ./rules/Global.list
+    behavior: classical
+    format: text
+  LAN:
+    type: file
+    path: ./rules/LAN.list
+    behavior: classical
+    format: text
+  Apple:
+    type: file
+    path: ./rules/Apple.list
+    behavior: classical
+    format: text
+  Speedtest:
+    type: file
+    path: ./rules/Speedtest.list
+    behavior: classical
+    format: text
+  WeChat:
+    type: file
+    path: ./rules/WeChat.list
+    behavior: classical
+    format: text
+  China:
+    type: file
+    path: ./rules/China.list
+    behavior: classical
+    format: text
+  # ---- 以下 7 个在 Loon 仓库里有文件、但 Loon.lcf 未引用, 需要时取消注释 ----
+  # AppStore:
+  #   type: file
+  #   path: ./rules/AppStore.list
+  #   behavior: classical
+  #   format: text
+  # Google:
+  #   type: file
+  #   path: ./rules/Google.list
+  #   behavior: classical
+  #   format: text
+  # Meta:
+  #   type: file
+  #   path: ./rules/Meta.list
+  #   behavior: classical
+  #   format: text
+  # OpenAI:
+  #   type: file
+  #   path: ./rules/OpenAI.list
+  #   behavior: classical
+  #   format: text
+  # Spotify:
+  #   type: file
+  #   path: ./rules/Spotify.list
+  #   behavior: classical
+  #   format: text
+  # TikTok:
+  #   type: file
+  #   path: ./rules/TikTok.list
+  #   behavior: classical
+  #   format: text
+  # Twitter:
+  #   type: file
+  #   path: ./rules/Twitter.list
+  #   behavior: classical
+  #   format: text
+
+rules:
+  # 顺序与策略按 Loon.lcf 的 [Remote Rule] 原样对应
+  - RULE-SET,PornAds,REJECT
+  - RULE-SET,Global,PROXY
+  - RULE-SET,LAN,DIRECT
+  - RULE-SET,Apple,DIRECT
+  - RULE-SET,Speedtest,DIRECT
+  - RULE-SET,WeChat,DIRECT
+  - RULE-SET,China,DIRECT
+  # 未启用的 7 个 (取消注释前先启用上面的 provider):
+  # - RULE-SET,AppStore,DIRECT
+  # - RULE-SET,Google,PROXY
+  # - RULE-SET,Meta,PROXY
+  # - RULE-SET,OpenAI,PROXY
+  # - RULE-SET,Spotify,PROXY
+  # - RULE-SET,TikTok,PROXY
+  # - RULE-SET,Twitter,PROXY
+  - MATCH,PROXY
