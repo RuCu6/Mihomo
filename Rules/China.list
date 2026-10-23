@@ -75,6 +75,7 @@ DOMAIN-SUFFIX,tjupt.org
 DOMAIN-SUFFIX,totheglory.im
 # OpenWrt
 DOMAIN,mirrors.vsean.net
+DOMAIN,nikkinikki.pages.dev
 DOMAIN-SUFFIX,immortalwrt.org
 # Ugreen NAS
 DOMAIN-SUFFIX,dcnas.vip
