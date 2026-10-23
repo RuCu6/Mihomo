@@ -73,5 +73,10 @@ DOMAIN-SUFFIX,redacted.ch
 DOMAIN-SUFFIX,springsunday.net
 DOMAIN-SUFFIX,tjupt.org
 DOMAIN-SUFFIX,totheglory.im
+DOMAIN-SUFFIX,dcnas.vip
+DOMAIN-SUFFIX,ug.link
+DOMAIN-SUFFIX,ugnas.com
+DOMAIN-SUFFIX,ugreengroup.com
+DOMAIN-KEYWORD,dc-ugnas
 # GeoIP
 GEOIP,CN
