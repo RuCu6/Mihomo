@@ -73,7 +73,10 @@ DOMAIN-SUFFIX,redacted.ch
 DOMAIN-SUFFIX,springsunday.net
 DOMAIN-SUFFIX,tjupt.org
 DOMAIN-SUFFIX,totheglory.im
+# OpenWrt
+DOMAIN,mirrors.vsean.net
 DOMAIN-SUFFIX,immortalwrt.org
+# Ugreen NAS
 DOMAIN-SUFFIX,dcnas.vip
 DOMAIN-SUFFIX,ug.link
 DOMAIN-SUFFIX,ugnas.com
