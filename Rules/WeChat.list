@@ -30,6 +30,4 @@ DOMAIN,soup.v.qq.com
 DOMAIN,vweixinf.tc.qq.com
 DOMAIN,weixin110.qq.com
 DOMAIN,wup.imtt.qq.com
-USER-AGENT,MicroMessenger*
-USER-AGENT,WeChat*
 IP-ASN,132203,no-resolve
