@@ -74,6 +74,7 @@ DOMAIN-SUFFIX,springsunday.net
 DOMAIN-SUFFIX,tjupt.org
 DOMAIN-SUFFIX,totheglory.im
 # OpenWrt
+DOMAIN,gh-proxy.com
 DOMAIN,mirrors.vsean.net
 DOMAIN,nikkinikki.pages.dev
 DOMAIN-SUFFIX,immortalwrt.org
